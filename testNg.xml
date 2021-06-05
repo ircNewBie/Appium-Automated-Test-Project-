@@ -1,0 +1,12 @@
+
+
+
+<suite name = "ToDo App Test Cases">
+    <test name = "Sample Test Case Scenario">
+        <classes>
+            <class name = "SignIn_test" />
+            <class name = "Add_new_task" />
+            <class name = "Signup_test" />
+        </classes>
+    </test>
+</suite>
