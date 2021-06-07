@@ -3,10 +3,15 @@
 
 <suite name = "ToDo App Test Cases">
     <test name = "Sample Test Case Scenario">
+
+        <parameter name = "platform_name"       value = "Android" />
+        <parameter name = "platform_version"    value = "8.1.0" />
+        <parameter name = "device_name"         value = "emulator-5554" />
+
         <classes>
-            <class name = "SignIn_test" />
-            <class name = "Add_new_task" />
-            <class name = "Signup_test" />
+            <class name = "com.ToDo.base.Base" />
+<!--            <class name = "SignIn_test" />-->
+<!--            <class name = "Add_new_task" />-->
         </classes>
     </test>
 </suite>

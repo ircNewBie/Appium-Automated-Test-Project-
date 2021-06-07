@@ -19,7 +19,8 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.3.0</version>
-            <scope>test</scope>
+<!--            <scope>test</scope>-->
+            <scope>compile</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
         <dependency>
