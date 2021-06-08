@@ -4,10 +4,12 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.AutomationName;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import java.io.File;
@@ -19,6 +21,12 @@ import java.util.concurrent.TimeUnit;
 
 //=====================================================================================================================
 public class Base {
+
+    public Base() {
+    //    Base Class Constructor for pages
+        PageFactory.initElements(new AppiumFieldDecorator( driver ), this );
+
+    }
 
     public static AppiumDriver <MobileElement> driver;
     public static DesiredCapabilities capability;

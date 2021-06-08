@@ -9,9 +9,9 @@
         <parameter name = "device_name"         value = "emulator-5554" />
 
         <classes>
-            <class name = "com.ToDo.base.Base" />
-<!--            <class name = "SignIn_test" />-->
-<!--            <class name = "Add_new_task" />-->
+            <class name = "com.ToDo.testCases.TestCase01_Sign_up_to_the_app" />
+            <class name = "com.ToDo.testCases.TestCase02_Login_to_the_app" />
+            <class name = "com.ToDo.testCases.TestCase03_Can_add_new_task_after_login" />
         </classes>
     </test>
 </suite>
